@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semangat untuk Cheiaa ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff9ec4,#ffd6e7);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    max-width:700px;
+    width:100%;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    color:#ff4f8b;
+    margin-bottom:15px;
+}
+
+h2{
+    color:#666;
+    margin-bottom:25px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+}
+
+button{
+    margin-top:25px;
+    border:none;
+    background:#ff4f8b;
+    color:white;
+    padding:15px 30px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#pesan{
+    margin-top:20px;
+    color:#ff4f8b;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.heart{
+    font-size:50px;
+    animation:beat 1s infinite;
+    margin-bottom:15px;
+}
+
+@keyframes beat{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="heart">❤️</div>
+
+    <h1>Untuk Cheiaa</h1>
+    <h2>Cewek paling manis dari Fitra ✨</h2>
+
+    <p>
+        Hai Cheiaa, semoga hari kamu berjalan dengan baik ya.
+        Kalau hari ini terasa berat, ingat kalau kamu lebih kuat
+        dari yang kamu kira. Jangan terlalu keras sama diri sendiri.
+        Kamu sudah melakukan yang terbaik, dan itu sangat berarti.
+        Tetap tersenyum, tetap semangat, dan jangan lupa istirahat.
+    </p>
+
+    <br>
+
+    <p>
+        Terima kasih sudah menjadi pribadi yang baik, manis,
+        dan selalu berusaha menjalani semuanya dengan kuat.
+        Semoga semua hal baik yang kamu harapkan bisa segera terwujud.
+    </p>
+
+    <button onclick="tampilPesan()">
+        Klik Kalau Lagi Butuh Semangat
+    </button>
+
+    <div id="pesan"></div>
+</div>
+
+<script>
+function tampilPesan(){
+    document.getElementById("pesan").innerHTML =
+    "Cheiaa, kamu hebat, kamu berharga, dan kamu pasti bisa melewati semuanya. Semangat terus ya! ❤️ - Fitra";
+}
+</script>
+
+</body>
+</html>
